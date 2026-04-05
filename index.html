@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHARNNY'S Nail Spa Booking</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+}
+
+.container {
+    max-width: 480px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+h1 {
+    text-align: center;
+    color: #c2185b;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 500;
+    margin-top: 12px;
+    display: block;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    background: linear-gradient(135deg, #d63384, #ad1457);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.whatsapp {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #25D366;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>SHARNNY'S Nail Spa 💅🏽</h1>
+    <div class="subtitle">Mobile Nail Services in Nairobi — We Come to You</div>
+
+    <form id="bookingForm" action="https://formsubmit.co/barakakariuki322@gmail.com" method="POST">
+        
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Nail Booking 💅🏽">
+
+        <label>Full Name</label>
+        <input type="text" name="Name" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="Phone" required>
+
+        <label>Location (Estate/Area)</label>
+        <input type="text" name="Location" required>
+
+        <label>Service</label>
+        <select name="Service" required>
+            <option value="">Select Service</option>
+            <option>Gel Nails</option>
+            <option>Acrylic Nails</option>
+            <option>Full Set + Design</option>
+            <option>Nail Repair</option>
+            <option>Home Service</option>
+        </select>
+
+        <label>Date</label>
+        <input type="date" name="Date" required>
+
+        <label>Time</label>
+        <input type="time" name="Time" required>
+
+        <label>Notes</label>
+        <textarea name="Notes"></textarea>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+
+    <a class="whatsapp" href="https://wa.me/254113832180?text=Hi%20I%20want%20to%20book%20a%20nail%20appointment">
+        Or Book via WhatsApp
+    </a>
+
+    <div class="footer">We respond within minutes 🚀</div>
+</div>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function() {
+    setTimeout(function() {
+        window.location.href = "thankyou.html";
+    }, 500);
+
+    setTimeout(function() {
+        window.open("https://wa.me/254113832180?text=Hi%20I%20just%20submitted%20a%20booking%20form", "_blank");
+    }, 1500);
+});
+</script>
+
+</body>
+  </html>
