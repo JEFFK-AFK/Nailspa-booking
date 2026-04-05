@@ -146,15 +146,15 @@ button:hover {
 
 <script>
 (function() {
-    emailjs.init("YOUR_PUBLIC_KEY"); // 👈 replace this
+    emailjs.init("QkEvgFl433p_zQ26s"); // 👈 replace this
 })();
 
 document.getElementById("bookingForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "YOUR_SERVICE_ID",   // 👈 replace
-        "YOUR_TEMPLATE_ID",  // 👈 replace
+        "service_la0vybr",   // 👈 replace
+        "template_xtjinfq",  // 👈 replace
         this
     ).then(() => {
         window.location.href = "thankyou.html"; // redirect after success
